@@ -11,7 +11,7 @@ const schema = a.schema({
     .model({
       content: a.string(),
       done: a.boolean(),
-      priority: a.enum(["low", "medium", "high"]),
+      priority: a.enum(["low", "medium", "higher"]),
     })
     .authorization([a.allow.owner()]),
 });
